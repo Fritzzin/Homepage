@@ -1,10 +1,16 @@
-import Link from "next/link";
+import Head from "next/head";
+import Title from "../components/Title";
+import LinkAbout from "../components/LinkAbout";
 
 function Home() {
   return (
-    <div>
-      <h1>Fritzzin's Homepage</h1>
-      <Link href="/about">About</Link>
+    <div className="Title" id="Title">
+      <Head>
+        <title>Fritzzin's Homepage</title>
+      </Head>
+
+      <Title />
+      <LinkAbout />
     </div>
   );
 }
